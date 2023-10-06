@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #eee;
+  background: url("https://www.wallpapertip.com/wmimgs/81-810349_material-design-wallpaper-4k.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 14px;
+  border-radius: 10px;
+}
+
+.grid-item {
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #333;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.centerContent h1 {
+  margin: 0px 0px 10px;
+  color: white;
+
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.centerContent h3 {
+  margin: 0px 0px 35px;
+  color: white;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#texty {
+  grid-column: 1 / 4;
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+#add {
+  grid-area: 2 / 4 / 2 / 4;
+}
+
+#sub {
+  grid-area: 3/ 4 / 3 / 4;
+}
+
+#mul {
+  grid-area: 4 / 4 / 4 / 4;
+}
+
+#div {
+  grid-area: 5 / 4 / 5 / 4;
+}
+
+#zero {
+  grid-area: 5 / 1 / 5 / 3;
+}
+
+#equal {
+  grid-area: 6 / 1 / 6 / 5;
+}
+
+#madeby {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#madeby a {
+  text-decoration: none;
+  color: white;
+}
